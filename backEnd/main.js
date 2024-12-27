@@ -1,12 +1,14 @@
 const express = require('express');
-const { LinearClient } = require('bybit-api');
+const { RestClientV5 } = require('bybit-api')
 const app = express();
 
+const key = process.env.API_KEY_COM;
+const secret = process.env.API_SECRET_COM;
 
 // Настройки API Bybit
-const client = new LinearClient({
-								key    : '<redacted>',   // Ваш API-ключ
-								secret : '<redacted>',   // Ваш секретный ключ
+const client = new RestClientV5({
+								key    : key,   // Ваш API-ключ
+								secret : secret,   // Ваш секретный ключ
 								testnet: true,           // true для тестовой среды
 });
 
