@@ -1,0 +1,28 @@
+table {
+  border-collapse: collapse;
+  border: 3px solid purple;
+  text-align: center;
+  width: 50%;
+}
+
+TD, TH {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid maroon; /* Параметры рамки */
+    text-align: center; /* Выравнивание по левому краю */
+}	
+	
+	.mainTable {
+		width: 100%;
+		font-weight: 600;
+		text-align: center;
+	}
+	
+	.col1 {
+		width: 30%;
+		font-weight: 900;
+	}
+	
+	.col2 {
+		width: 60%;
+	}
+
